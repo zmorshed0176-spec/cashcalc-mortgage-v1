@@ -9,6 +9,15 @@
 <meta name="theme-color" content="#021C1A">
 
 <!--
+  v2 (17 Nov 2026): same client note as cashcalc-nexus-v4 round 2. "Nexus for Financial
+  Advisors" (spelled "Advisors") EVERYWHERE Nexus appeared in visible text: section 4 eyebrows,
+  diagram hub, FAQ question, and every "Nexus by FE fundinfo". Lines where the name would repeat
+  straight after a heading/eyebrow/question were reworded instead. No bare "Nexus" left in
+  visible text. Title/meta never mentioned Nexus, so unchanged. Full list: ./CHANGES.md.
+  Everything else is v1, unchanged. The v1 notes below still describe the page.
+-->
+
+<!--
   FE CashCalc MORTGAGE + PROTECTION page, v1 (first draft, 13 Oct 2026). Client: FFI.
   Request (Cam): "a version centred around the mortgage offering of CashCalc. Include Nexus
   but lower down. The main copy and target audience will be mortgage providers."
@@ -208,6 +217,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
   color:var(--teal-700);
 }
 .band-dark .eyebrow{color:var(--teal-400);}
+.eyebrow{text-wrap:balance;} /* v2: long eyebrows wrap evenly, no orphan word */
 
 /* gradient underline under key words (reference's underlined H1 phrase) */
 .ul{
@@ -1024,14 +1034,13 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
 <section class="section band-light" id="nexus" aria-labelledby="nexus-title">
   <div class="container">
     <div class="head">
-      <span class="eyebrow">Part of Nexus by FE fundinfo</span>
+      <span class="eyebrow">Part of Nexus for Financial Advisors</span>
       <h2 id="nexus-title" class="h2">Mortgage advice, connected to the wider plan</h2>
-      <p class="lead">FE CashCalc sits inside Nexus by FE fundinfo. For firms that give mortgage and
-        financial advice, Nexus links the client's plan to fund research in FE Analytics, so both
-        teams work in one connected workflow.</p>
+      <p class="lead">For firms that give mortgage and financial advice, FE CashCalc now links the
+        client's plan to fund research in FE Analytics, so both teams work in one connected workflow.</p>
     </div>
 
-    <div class="flow" role="img" aria-label="Diagram: FE CashCalc mortgage and protection planning and FE Analytics fund research, connected through Nexus">
+    <div class="flow" role="img" aria-label="Diagram: FE CashCalc mortgage and protection planning and FE Analytics fund research, connected through Nexus for Financial Advisors">
       <div class="node">
         <span class="node__ico"><svg><use href="#i-home"/></svg></span>
         <b>FE CashCalc</b><span>Mortgage, protection and the client's wider plan</span>
@@ -1039,7 +1048,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
       <div class="flow__arrow"><svg><use href="#i-swap"/></svg></div>
       <div class="node node--hub">
         <span class="node__ico"><svg><use href="#i-hub"/></svg></span>
-        <b>Nexus</b><span>One connected workflow</span>
+        <b>Nexus for Financial Advisors</b><span>One connected workflow</span>
       </div>
       <div class="flow__arrow"><svg><use href="#i-swap"/></svg></div>
       <div class="node">
@@ -1047,7 +1056,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
         <b>FE Analytics</b><span>Fund research, for your financial advice team</span>
       </div>
     </div>
-    <p class="tiny center flow-note">Illustrative diagram of how the products connect in Nexus.</p>
+    <p class="tiny center flow-note">Illustrative diagram of how the products connect.</p>
 
     <div class="split">
       <div class="listcard">
@@ -1059,7 +1068,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
         <p class="listcard__foot">Start with the mortgage and the cover.</p>
       </div>
       <div class="listcard listcard--accent">
-        <span class="eyebrow">What Nexus adds for advice firms</span>
+        <span class="eyebrow">What Nexus for Financial Advisors adds</span>
         <ul class="checks">
           <li><span class="ico-check"><svg><use href="#i-check"/></svg></span>Connect a remortgage decision to the client's long-term plan, without re&#8209;keying across separate tools</li>
           <li><span class="ico-check"><svg><use href="#i-check"/></svg></span>Move between the client's plan and fund research without switching systems</li>
@@ -1068,7 +1077,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
       </div>
     </div>
 
-    <p class="small center client-line">Already use FE CashCalc? Ask your Account Manager how Nexus links it to FE Analytics.</p>
+    <p class="small center client-line">Already use FE CashCalc? Ask your Account Manager how to link it to FE Analytics.</p>
   </div>
 </section>
 
@@ -1179,10 +1188,10 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
             adviser licence. For larger firms, contact us for a bespoke group price.</p></div>
         </details>
         <details>
-          <summary><span>Where does Nexus fit in?</span><span class="faq__chev" aria-hidden="true"><svg><use href="#i-chev"/></svg></span></summary>
-          <div class="faq__a"><p>FE CashCalc sits inside Nexus by FE fundinfo. For firms that also give
-            financial advice, Nexus links the client's plan to fund research in FE Analytics, so you can
-            move between the two without switching systems.</p></div>
+          <summary><span>Where does Nexus for Financial Advisors fit in?</span><span class="faq__chev" aria-hidden="true"><svg><use href="#i-chev"/></svg></span></summary>
+          <div class="faq__a"><p>It's the FE fundinfo platform that FE CashCalc sits inside. For firms that
+            also give financial advice, it links the client's plan to fund research in FE Analytics, so you
+            can move between the two without switching systems.</p></div>
         </details>
         <details>
           <summary><span>I already use FE CashCalc. Do I need to set anything up?</span><span class="faq__chev" aria-hidden="true"><svg><use href="#i-chev"/></svg></span></summary>
